@@ -6,5 +6,5 @@ double luasLingkaran(double jariJari) {
 void main() {
   double jariJari = 5;
   double luas = luasLingkaran(jariJari);
-  print("Luas lingkaran dengan jari-jari $jariJari adalah $luas")
+  print("Luas lingkaran dengan jari-jari $jariJari adalah $luas");
 }
