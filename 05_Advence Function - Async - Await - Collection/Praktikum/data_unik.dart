@@ -30,5 +30,5 @@ void main() {
     "amuse"
   ];
   List<String> hasilData2 = hapusDuplikat(data2);
-  print("Sampel hasildata1 adalah = $hasilData2");
+  print("Sampel hasildata2 adalah = $hasilData2");
 }
