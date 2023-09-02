@@ -12,7 +12,7 @@ class HelloWorld extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: AppBar(
-        title: const Text('Hai nama aku Rani'),
+        title: const Text('Hai nama aku rani'),
       ),
     );
   }
