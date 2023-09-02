@@ -1,17 +1,16 @@
-Future<int> hitungFaktorial(int angka) {
+Future<int> hitungFaktorial(int angka) async {
   int faktorial = 1;
 
-  return Future(() {
-    for (int i = 1; i <= angka; i++) {
-      faktorial *= i;
-    }
-    return faktorial;
-  });
+  for (int i = 1; i <= angka; i++) {
+    faktorial *= i;
+    await Future.delayed(Duration(seconds: 1));
+  }
+  return faktorial;
 }
 
-void main() {
+void main() async {
   int angka = 5;
-  hitungFaktorial(angka).then((hasilFaktorial) {
-    print("Faktorial dari angka $angka adalah = $hasilFaktorial");
-  });
+  int hasilFaktorial = await hitungFaktorial(angka);
+  print("Faktorial dari angka $angka adalah = $hasilFaktorial");
+  
 }
