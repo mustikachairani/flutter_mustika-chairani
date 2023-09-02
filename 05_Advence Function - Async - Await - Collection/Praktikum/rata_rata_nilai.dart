@@ -8,5 +8,5 @@ void main() {
 
   double rataRata = total / nilai.length;
   int rataRataPembulatan = (rataRata + 0.5).toInt();
-  print("Nilai rata - rata (dengan pembulatan keatas): $rataRataPembulatan");
+  print("Nilai rata - rata adalah: $rataRataPembulatan");
 }
