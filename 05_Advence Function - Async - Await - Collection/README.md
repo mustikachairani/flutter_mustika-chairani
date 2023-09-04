@@ -1,4 +1,4 @@
- Resume Advence Function, Async - Await, Collection 
+**Resume Advence Function, Async - Await, Collection**
 
 - Perulangan for digunakan untuk mengambil data dari list untuk menghindari penulisan kode berulang yang dapat membingungkan. Kita dapat memanfaatkan perulangan for untuk mengakses data dalam sebuah list yang biasanya berisi kumpulan elemen. Hal ini sangat berguna dalam pemrosesan data dan pengulangan tugas tertentu.
 
