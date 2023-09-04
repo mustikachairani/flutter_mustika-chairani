@@ -1,4 +1,4 @@
-<h1>Branching - Looping - Function</h1>
+# Branching - Looping - Function
 
 - Instruksi (branching) merupakan pengambilan keputusan yang memungkinkan penentuan alur program tergantung pada kondisi tertentu, termasuk pengaturan control flow. 
 
