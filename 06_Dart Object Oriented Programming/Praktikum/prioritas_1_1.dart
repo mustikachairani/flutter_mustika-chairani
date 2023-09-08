@@ -5,5 +5,5 @@ class Hewan {
   }
 }
 void main(){
-  var 
+  
 }
