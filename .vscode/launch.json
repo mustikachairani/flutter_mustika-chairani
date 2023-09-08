@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "name": "rani",
+            "cwd": "08_Introduction Flutter Widget\\Praktikum\\latihan\\rani",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "rani (profile mode)",
+            "cwd": "08_Introduction Flutter Widget\\Praktikum\\latihan\\rani",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "rani (release mode)",
+            "cwd": "08_Introduction Flutter Widget\\Praktikum\\latihan\\rani",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
