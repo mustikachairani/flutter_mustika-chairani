@@ -4,8 +4,7 @@ abstract class Matematika {
 
   Matematika(this.x, this.y);
 
-  int get persekutuan_terbesar;
-  int get persekutuan_terkecil;
+  int hasil();
 }
 
 class PersekutuanTerkecil implements Matematika {
@@ -14,7 +13,7 @@ class PersekutuanTerkecil implements Matematika {
 
   PersekutuanTerkecil(this.x, this.y);
 
-  int get persekutuan_terbesar {
+  int hasil() {
     int nilaiTerbesar = x > y ? x : y;
     int persekutuanTerkecil = nilaiTerbesar;
 
@@ -25,8 +24,6 @@ class PersekutuanTerkecil implements Matematika {
       persekutuanTerkecil += nilaiTerbesar;
     }
   }
-
-  int get persekutuan_terkecil => (x * y) ~/ persekutuan_terbesar; 
 }
 
 class PersekutuanTerbesar implements Matematika {
@@ -35,7 +32,7 @@ class PersekutuanTerbesar implements Matematika {
 
   PersekutuanTerbesar(this.x, this.y);
 
-  int get persekutuan_terbesar {
+  int hasil() {
     while (y != 0) {
       int nilaiY = y;
       y = x % y;
@@ -43,14 +40,12 @@ class PersekutuanTerbesar implements Matematika {
     }
     return x;
   }
-
-  int get persekutuan_terkecil => (x * y) ~/ persekutuan_terbesar; 
 }
 
 void main() {
   Matematika hitungPersekutuanTerkecil = PersekutuanTerkecil(12, 18);
   Matematika hitungPersekutuanTerbesar = PersekutuanTerbesar(24, 20);
 
-  print("Kelipatan Persekutuan Terkecil : ${hitungPersekutuanTerkecil.persekutuan_terbesar}");
-  print("Kelipatan Persekutuan Terbesar : ${hitungPersekutuanTerbesar.persekutuan_terbesar}");
+  print("Kelipatan Persekutuan Terkecil : ${hitungPersekutuanTerkecil.hasil()}");
+  print("Kelipatan Persekutuan Terbesar : ${hitungPersekutuanTerbesar.hasil()}");
 }
