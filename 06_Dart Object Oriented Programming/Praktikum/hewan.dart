@@ -11,8 +11,8 @@ class Hewan {
 }
 
 void main() {
-  var hewan1 = Hewan('Kucing', 5);
-  var hewan2 = Hewan('Sapi', 400);
+  var hewan1 = Hewan('Kucing', 5.0);
+  var hewan2 = Hewan('Sapi', 400.0);
 
   print("Informasi Hewan 1: ");
   hewan1.beratBadan();
