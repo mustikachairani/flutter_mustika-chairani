@@ -1,5 +1,3 @@
-import '../../03_Fundamental Dart/Praktikum/keliling_luas_persegi_dan_persegi_panjang.dart';
-
 class BangunRuang {
   double panjang;
   double lebar;
