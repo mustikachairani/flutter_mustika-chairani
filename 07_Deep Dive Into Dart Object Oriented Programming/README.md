@@ -56,4 +56,3 @@ Konsep-konsep dasar dalam pemrograman berorientasi objek yang dapat digunakan un
 9. **Getter dan Setter**:
    - Getter dan setter adalah metode yang memungkinkan akses terkontrol ke variabel private.
    - Mereka memungkinkan enkapsulasi dengan menyediakan cara untuk membaca dan memodifikasi data private dengan validasi atau perhitungan saat diperlukan.
-
