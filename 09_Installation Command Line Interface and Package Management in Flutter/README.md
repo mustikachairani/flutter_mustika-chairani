@@ -1,13 +1,16 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+# Installation Command Line Interface and Package Management in Flutter
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Flutter CLI (Command Line Interface) adalah alat penting dalam pengembangan aplikasi menggunakan Flutter SDK. CLI memungkinkan pengembang berinteraksi dengan SDK melalui perintah yang dapat dieksekusi dalam terminal. Beberapa perintah utama yang tersedia meliputi:
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+- flutter create: Digunakan untuk membuat proyek Flutter baru.
+- flutter run: Digunakan untuk menjalankan aplikasi.
+- flutter doctor: Digunakan untuk memeriksa konfigurasi pengembangan.
+- flutter upgrade: Digunakan untuk memperbarui SDK Flutter ke versi terbaru.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
+Selain perintah dasar, CLI juga menyediakan perintah lain yang berguna dalam pengembangan, termasuk:
 
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
+- flutter emulators: Digunakan untuk mengelola emulator yang dapat digunakan untuk menguji aplikasi di berbagai perangkat.
+- flutter channel: Memungkinkan pengembang untuk beralih antara saluran Flutter yang berbeda untuk menguji pembaruan eksperimental.
+- flutter pub: Digunakan untuk mengelola paket pihak ketiga. Pengembang dapat menambahkan paket yang dibutuhkan dari pub.dev menggunakan flutter pub add dan memastikan semua paket terinstall dengan flutter pub get.
 
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+Selain itu, pengembang juga dapat meningkatkan fungsionalitas aplikasi dengan menambahkan paket pihak ketiga. Ini dilakukan dengan mencari paket yang dibutuhkan di pub.dev, menyalin dependencies ke file pubspec.yaml, dan menjalankan flutter pub get di terminal.
