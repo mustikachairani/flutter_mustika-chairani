@@ -7,61 +7,90 @@ void main() {
 class HelloWorld extends StatelessWidget {
   const HelloWorld({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Rani App'),
+          title: Text('Material App'),
+          backgroundColor: Colors.black54,
         ),
         drawer: Drawer(
-           child: ListView(
-          // Important: Remove any padding from the ListView.
-          padding: EdgeInsets.zero,
-          children: [
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.blue,
+          backgroundColor: Colors.black87,
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              Container(
+                color: Colors.black87,
+                child: ListTile(
+                  title: Text('Home', style: TextStyle(color: Colors.white)),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                    ),
               ),
-              child: Text('Drawer Header'),
-            ),
-            ListTile(
-              title: const Text('Home'),
-              
-            ),
-            ListTile(
-              title: const Text('Business'),
-              
-            ),
-            ListTile(
-              title: const Text('School'),
-             
+                Container(
+                color: Colors.black87,
+                child: ListTile(
+                  title: Text('Setting', style: TextStyle(color: Colors.white)),
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                    ),
+              ),
+
+              // ListTile(
+              //   title: Text('Business', style: TextStyle(color: Colors.white)),
+              // ),
+              // ListTile(
+              //   title: Text('School', style: TextStyle(color: Colors.white)),
+              // ),
+            ],
+            // children: [
+            //   DrawerHeader(
+            //     decoration: BoxDecoration(
+            //       color: Colors.pink,
+            //     ),
+            //     child: Text('Drawer Header'),
+            //   ),
+            //   ListTile(
+            //     title: Text('Home'),
+            //     onTap: () {
+            //       Navigator.pop(context);
+            //     },
+            //   ),
+            //   ListTile(
+            //     title: Text('Business'),
+                
+            //   ),
+            //   ListTile(
+            //     title: Text('School'),
+            //   ),
+            // ],
+          ),
+        ),
+        body: Center(
+          child: Text("This is Material App",
+          style: TextStyle(
+            color: Colors.white,
+           ),
+          )
+        ),
+        backgroundColor: Colors.black87,
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.black87,
+          selectedItemColor: Colors.blue[700],
+          unselectedItemColor: Colors.white,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.settings),
+              label: 'Settings'
             ),
           ],
         ),
-        ),
-        body: Center(
-          child: Text('Material'),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-         items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Beranda',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Cari',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profil',
-          ),
-        ],
-      ),
-        
       ),
     );
   }
+  
 }
