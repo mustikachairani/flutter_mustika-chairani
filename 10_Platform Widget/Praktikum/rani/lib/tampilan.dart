@@ -79,14 +79,8 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(' ${selectedDate.toLocal()}'.split(' ')[0]),
-        TextButton(
-          onPressed: () => _selectDate(context),
-          child: Text('Pilih Tanggal'),
-        ),
-      ],
+    return ListView(
+      
     );
   }
 }
