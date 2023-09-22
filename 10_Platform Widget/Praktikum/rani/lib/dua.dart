@@ -67,7 +67,7 @@ class HelloWorld extends StatelessWidget {
                       radius: 24,
                       backgroundColor: Colors.green,
                       child: Text(
-                        kontak['nama']![0], 
+                        kontak['nama']![0],
                         style: TextStyle(color: Colors.white),
                       ),
                     ),

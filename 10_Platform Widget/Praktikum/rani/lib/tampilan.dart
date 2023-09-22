@@ -14,73 +14,57 @@ class HelloWorld extends StatefulWidget {
 class _HelloWorldState extends State<HelloWorld> {
   @override
   Widget build(BuildContext context) {
+    List<String> learn = [
+      "Learn Flutter",
+      "Learn ReactJS",
+      "Learn VueJS",
+      "Learn Tailwind CSS",
+      "Learn UI/UX",
+      "Learn Figma",
+      "Learn Digital Marketing"
+    ];
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('My Flutter App'),
-            actions: [IconButton(onPressed: () {}, icon: Icon(Icons.search))],
+        appBar: AppBar(
+          backgroundColor: Color(0XFF6200EE),
+          title: Center(child: Text('My Flutter App')),
+          actions: <Widget>[
+            IconButton(onPressed: () {}, icon: Icon(Icons.search))
+          ],
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(0),
+          child: ListView.builder(
+            itemCount: learn.length,
+            itemBuilder: (BuildContext context, int index) {
+              return Card(
+                child: ListTile(
+                  title: Text(learn[index]),
+                ),
+              );
+            },
           ),
-          body: Container(
-            margin: EdgeInsets.all(8.0),
-            padding: EdgeInsets.all(20.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Cover',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  height: 8.0,
-                ),
-                SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      onPressed: () {},
-                      child: Text('Pilih File'),
-                      style: ElevatedButton.styleFrom(primary: Colors.grey),
-                    )),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Text(
-                  'Publish At',
-                  style: TextStyle(fontWeight: FontWeight.bold),
-                ),
-                DatePickerWidget(),
-              ],
-            ),
-          )),
-    );
-  }
-}
-
-class DatePickerWidget extends StatefulWidget {
-  @override
-  _DatePickerWidgetState createState() => _DatePickerWidgetState();
-}
-
-class _DatePickerWidgetState extends State<DatePickerWidget> {
-  DateTime selectedDate = DateTime.now();
-
-  Future<void> _selectDate(BuildContext context) async {
-    final DateTime? picked = await showDatePicker(
-      context: context,
-      initialDate: selectedDate,
-      firstDate: DateTime(2000),
-      lastDate: DateTime(2101),
-    );
-    if (picked != null && picked != selectedDate)
-      setState(() {
-        selectedDate = picked;
-      });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add, color: Colors.black,),
+          onPressed: () {},
+          backgroundColor: Color(0xFF03DAC5),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Color(0XFF6200EE),
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.blueGrey[200],
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(Icons.favorite), label: 'Favorites'),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.info), label: 'Information')
+          ],
+        ),
+      ),
     );
   }
 }
