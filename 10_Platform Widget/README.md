@@ -1,13 +1,7 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+#Platform Widget
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Widget dasar adalah komponen-komponen grafis yang menjadi pondasi dalam pengembangan aplikasi, baik di sistem Android maupun iOS. Di sistem Android, kita sering menggunakan widget dasar seperti "Scaffold" untuk mengatur tampilan halaman utama atau home. Scaffold ini berperan penting dalam membentuk kerangka dasar tampilan aplikasi.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+Sementara di sistem iOS, kita memiliki widget dasar bernama "Cupertino" yang berfungsi untuk mengemas semua elemen atau widget dalam aplikasi. Namun, ada perbedaan penting, yaitu dalam mengelola tema. Cupertino menggunakan variabel "theme Dark" untuk menyimpan tema gelap karena tidak memiliki fitur bawaan untuk tema gelap seperti yang ada dalam Material Design.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
-
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
-
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+Selain itu, kita juga menggunakan "Cupertino app" pada halaman Scaffold. Ini digunakan untuk menyesuaikan tata letak dasar halaman dengan mengatur properti-properti tertentu sesuai dengan kebutuhan aplikasi. Dengan begitu, kita dapat menciptakan antarmuka pengguna yang menarik dan responsif di kedua platform tersebut.
