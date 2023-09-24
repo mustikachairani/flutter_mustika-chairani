@@ -1,4 +1,4 @@
-#Platform Widget
+# Platform Widget
 
 Widget dasar adalah komponen-komponen grafis yang menjadi pondasi dalam pengembangan aplikasi, baik di sistem Android maupun iOS. Di sistem Android, kita sering menggunakan widget dasar seperti "Scaffold" untuk mengatur tampilan halaman utama atau home. Scaffold ini berperan penting dalam membentuk kerangka dasar tampilan aplikasi.
 
