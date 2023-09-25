@@ -1,13 +1,18 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Flutter Form(Form input Button)</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Materi ini menjelaskan tentang penggunaan Flutter dalam pembuatan formulir dan elemen-elemen input dalam pengembangan aplikasi. Berikut kesimpulan dari materi tersebut:
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+1. Form
+Form digunakan untuk menerima isian data dari pengguna, baik satu atau lebih. Pembuatan form menggunakan Stateful Widget, dan keadaan form dapat diatur menggunakan GlobalKey<FormState>.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
+2. Input
+   - TextField: Digunakan untuk menerima isian data teks dari pengguna, dan data diambil menggunakan TextEditingController.
+   - Radio: Memberi opsi tunggal kepada pengguna, yang hanya dapat memilih satu opsi. Data dipilih dengan menggunakan properti yang sesuai dengan nilai (value) pada radio.
+   - Checkbox: Memberi opsi ganda kepada pengguna, yang dapat memilih beberapa opsi sekaligus.
+   - DropdownButton: Memberi opsi tunggal kepada pengguna, dengan opsi yang awalnya tidak terlihat dan hanya muncul saat diaktifkan. Data diambil menggunakan properti yang sesuai dengan nilai (value) pada MenuItem dropdown.
 
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
+3. Button
+   - ElevatedButton: Tombol yang menonjol dan dapat menjalankan fungsi (onPress) saat ditekan.
+   - IconButton: Tombol yang hanya menampilkan ikon dan juga dapat menjalankan fungsi (onPress) saat ditekan.
 
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+Pengembangan Flutter dapat membuat formulir interaktif dan mengumpulkan data dari pengguna dengan berbagai jenis input, serta memberikan kemampuan untuk merespons tindakan pengguna melalui tombol-tombol yang sesuai.

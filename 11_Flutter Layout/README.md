@@ -1,13 +1,13 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Flutter Layout</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Dalam pengembangan aplikasi, layout digunakan untuk mengatur tata letak widget dalam antarmuka pengguna. Ada beberapa jenis layout yang dapat digunakan:
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+1. Single Child Layout Kontainer digunakan untuk mengelilingi widget lain dan mengatur margin, padding, serta border.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
+2. Widget Center memungkinkan widget untuk ditempatkan di tengah-tengah ruang yang tersedia.
 
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
+3. Widget Size Box membungkus widget dan mengizinkan pengaturan lebar dan tinggi dengan lebih fleksibel.
 
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
+4. Multi Child Layout terdiri dari widget seperti "Widget Kolom" untuk pengaturan vertikal, "Widget Row" untuk pengaturan horizontal, "Widget List View" untuk daftar yang dapat di-scroll, dan "Widget Grid View" untuk tampilan galeri.
 
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+Dengan berbagai jenis layout ini, pengembang dapat dengan mudah mengontrol tata letak dan penampilan widget dalam aplikasi mereka, baik itu dalam bentuk daftar yang dapat di-scroll atau tampilan galeri, secara vertikal maupun horizontal.
