@@ -1,13 +1,9 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Assets</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Kegunaan Assets dalam pengembangan Flutter adalah untuk pengelolaan asetbywng memiliki peran penting seperti file gambar, ikon, dan font. Aset-aset ini mempengaruhi tampilan dan gaya aplikasi. Flutter memungkinkan kita untuk mengatur aset ini dengan menggunakan file `pubspec.yaml`, yang terletak di root project, untuk mengidentifikasi dan mengelola aset yang dibutuhkan oleh aplikasi.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+Dalam hal gambar (image), Flutter mendukung berbagai format gambar seperti JPEG, PNG, GIF, dan lainnya. Penggunaan gambar dapat membuat antarmuka aplikasi lebih menarik, dan kita dapat menampilkan gambar dari aset dalam proyek atau mengambil gambar dari internet.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
+Penggunaan font juga menjadi elemen desain penting dalam aplikasi. Flutter memungkinkan kita menggunakan font kustom atau font dari package. Mengatur dan mengintegrasikan font dengan gaya aplikasi adalah bagian penting dari pengembangan UI.
 
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
-
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+Assets memiliki langkah-langkah konkret dalam pengembangan aplikasi manajemen tugas, seperti menambahkan gambar, mengatur profil, menggunakan font, dan menambahkan konten lain. Semua ini adalah langkah-langkah penting dalam menciptakan aplikasi yang menarik dan berfungsi dengan baik.
