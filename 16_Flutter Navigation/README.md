@@ -1,13 +1,9 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Flutter Navigation</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+- Navigasi dalam Flutter merupakan konsep penting dalam pengembangan aplikasi mobile. Ada beberapa cara untuk melakukan navigasi. Pertama, navigasi dasar dapat dicapai dengan menggunakan `Navigator.push` untuk berpindah dari satu halaman ke halaman lain dalam aplikasi, dan untuk kembali ke halaman sebelumnya, kita dapat menggunakan `Navigator.pop`.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+- Navigasi dengan Named Routes memungkinkan setiap halaman memiliki alamat yang disebut "routes." Untuk berpindah ke halaman baru, digunakan `Navigator.pushNamed`, dan untuk kembali ke halaman sebelumnya, tetap dapat menggunakan `Navigator.pop`.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
+- Untuk mendaftarkan rute (routes) ini, kita perlu menambahkan properti `initialRoute` pada widget `MaterialApp`, dan setiap route diwakili oleh sebuah fungsi yang membentuk halaman yang sesuai.
 
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
-
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+- Untuk mengirim data ke halaman baru, kita dapat menggunakan argumen saat melakukan `pushNamed`. Dengan begitu, Flutter memberikan fleksibilitas dalam mengelola navigasi dan berbagi data antara halaman-halaman dalam aplikasi Flutter.
