@@ -1,4 +1,4 @@
-<h1>Dialog Bottom Sheet</h1>
+#Dialog Bottom Sheet
 
 - Dialog Bottom Sheet adalah elemen antarmuka pengguna yang muncul dari bagian bawah layar aplikasi yang digunakan untuk memberikan informasi tambahan atau opsi yang relevan dengan konteks saat ini dalam aplikasi. Dialog Bottom Sheet membantu pengembang dalam menyediakan konteks tambahan kepada pengguna tanpa mengganggu tampilan utama aplikas,sehingga meminimalkan gangguan dengan tetap memungkinkan interaksi dengan konten latar belakang. Selain itu, Dialog Bottom Sheet adalah cara efisien untuk mendapatkan input dari pengguna dalam aplikasi mobile. Penggunaan yang tepat dari Dialog Bottom Sheet dapat meningkatkan pengalaman pengguna dalam manajemen tugas dan aplikasi serupa.
 
