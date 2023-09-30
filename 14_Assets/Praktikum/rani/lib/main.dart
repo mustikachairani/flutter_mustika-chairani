@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'drawer.dart';
 import 'galeri.dart';
 
 void main() {
