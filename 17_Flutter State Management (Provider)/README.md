@@ -1,13 +1,7 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Flutter State Management</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+- State dalam pengembangan aplikasi Flutter mencerminkan data yang dapat berubah selama siklus hidup widget, terutama pada stateful widget. Ini memungkinkan adaptabilitas widget saat sedang aktif, mengakomodasi perubahan data yang diperlukan. Pentingnya global state management muncul ketika kita perlu berbagi data antar widget dan memanfaatkan langkah-langkah yang sama dengan lebih efisien. Sebagai contoh, dalam konteks e-commerce, global state memungkinkan informasi keranjang belanja diakses dari berbagai bagian aplikasi, seperti deskripsi produk dan halaman pembayaran.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+- Provider adalah alat yang mempermudah manajemen state dalam Flutter, terutama ketika kompleksitas aplikasi meningkat. Instalasi provider melibatkan penambahan paket provider ke file pubspec.yaml dan pendaftaran provider dalam main.dart dengan menggunakan multi-provider. Langkah-langkah ini memungkinkan Flutter untuk dengan mudah mengelola state secara global dan menyediakan akses yang bersih dan terorganisir ke data yang dibutuhkan oleh berbagai bagian dari aplikasi.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
-
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
-
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+- Dengan state management yang efektif, seperti yang diterapkan melalui provider, pengembangan aplikasi Flutter menjadi lebih terstruktur dan mudah dikelola. Penggunaan state memberikan fleksibilitas dan kontrol yang diperlukan untuk merespons dinamika aplikasi, sementara global state management dengan provider memastikan komunikasi yang efisien antar widget, memperbaiki keranjang belanja e-commerce hanya sebagai contoh aplikatifnya.
