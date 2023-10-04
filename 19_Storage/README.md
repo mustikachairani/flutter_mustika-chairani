@@ -1,13 +1,5 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Storage</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Penyimpanan lokal menjadi hal penting dalam penggunaan data internet di perangkat mobile. Dalam hal ini, terdapat dua metode utama untuk implementasi penyimpanan lokal, yaitu share preference dan lokal database SQLite. Share preference berfungsi sebagai kotak kecil yang ideal untuk menyimpan data sederhana dengan format key-value, seperti informasi login atau riwayat pencarian. Sebaliknya, lokal database SQLite berperan sebagai gudang rahasia yang mampu menangani jumlah data besar secara privat di perangkat lokal. Dengan menggunakan package sqflite, pengembang dapat mengakses fitur-fitur SQL Lite database seperti insert, read, update, dan remove data.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
-
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
-
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
-
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+Share preference menjadi banyak digunakan untuk data dasar seperti teks, angka, dan boolean, sementara SQLite memberikan kemampuan lebih besar untuk menyimpan dan mengelola data dalam jumlah besar. Kelebihan SQLite terletak pada kapasitasnya yang dapat menangani operasi data yang kompleks di perangkat lokal, menjadikannya solusi ideal untuk penyimpanan data yang bersifat private. Selain itu, penggunaan SQLite dalam pengembangan aplikasi mobile dapat memanfaatkan keuntungan sebagai database open source yang mendukung berbagai operasi seperti insert, read, update, dan remove data. Dengan demikian, pengembang memiliki opsi yang fleksibel dan andal untuk memenuhi kebutuhan penyimpanan lokal pada perangkat mobile, baik untuk data sederhana maupun data dalam jumlah besar.
