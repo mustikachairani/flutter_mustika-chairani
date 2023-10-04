@@ -1,4 +1,4 @@
-<h1>Flutter State Management</h1>
+<h1>Flutter State Management (BLOC)</h1>
 
 Flutter membangun UI secara deklaratif, mencerminkan keadaan state saat ini. State adalah data yang disimpan oleh widget saat aktif. Ada dua jenis state: ephemeral untuk widget yang tidak memerlukan akses dari bagian lain, dan app state untuk data yang dibutuhkan di berbagai bagian aplikasi.
 
