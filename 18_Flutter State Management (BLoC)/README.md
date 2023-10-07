@@ -1,13 +1,7 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Flutter State Management (BLoC)</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+Flutter membangun UI secara deklaratif, mencerminkan keadaan state saat ini. State adalah data yang disimpan oleh widget saat aktif. Ada dua jenis state: ephemeral untuk widget yang tidak memerlukan akses dari bagian lain, dan app state untuk data yang dibutuhkan di berbagai bagian aplikasi.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+Ephemeral state, seperti pada PageView atau Switch Button, tidak memerlukan state management kompleks, hanya setState pada stateful widget. App state digunakan untuk data yang dibutuhkan di berbagai bagian aplikasi, seperti login info atau preferensi pengguna.
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
-
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
-
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
-
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+SetState cocok untuk ephemeral state, sedangkan Provider direkomendasikan untuk state management yang kompleks seperti app state. Bloc menggunakan pola stream/observable untuk memisahkan UI dari logika bisnisnya. Sehingga, Flutter menawarkan pendekatan yang fleksibel sesuai dengan kompleksitas kebutuhan state management aplikasi.
