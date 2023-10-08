@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:intl/intl.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:provider/provider.dart';
 
 class ContactPage extends StatefulWidget {
   const ContactPage({Key? key});
@@ -278,15 +277,17 @@ class _ContactPageState extends State<ContactPage> {
 
   void _saveEditing() {
     setState(() {
-      // Save changes for the editing contact
-      dataContacts[editingIndex]["name"] = inputController1.text;
-      dataContacts[editingIndex]["number"] = inputController2.text;
-      isEditing = false;
-      editingIndex = -1;
+      if (editingIndex != -1) {
+        // Save changes for the editing contact
+        dataContacts[editingIndex]["name"] = inputController1.text;
+        dataContacts[editingIndex]["number"] = inputController2.text;
+        isEditing = false;
+        editingIndex = -1;
 
-      // Reset controllers
-      inputController1.clear();
-      inputController2.clear();
+        // Reset controllers
+        inputController1.clear();
+        inputController2.clear();
+      }
     });
   }
 
@@ -360,48 +361,48 @@ class _ContactPageState extends State<ContactPage> {
     _editContact(index);
   }
 
-  void _editContact(int index) {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text('Edit Contact'),
-          content: Column(
-            children: [
-              TextField(
-                decoration: InputDecoration(
-                  labelText: 'New Name',
-                ),
-                onChanged: (value) {
-                  setState(() {
-                    inputController1.text = value;
-                  });
-                },
+ void _editContact(int index) {
+  setState(() {
+    isEditing = true;
+    editingIndex = index;
+    inputController1.text = dataContacts[index]["name"] ?? "";
+    inputController2.text = dataContacts[index]["number"] ?? "";
+  });
+
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Edit Contact'),
+        content: Column(
+          children: [
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'New Name',
               ),
-              TextField(
-                decoration: InputDecoration(
-                  labelText: 'New Number',
-                ),
-                onChanged: (value) {
-                  setState(() {
-                    inputController2.text = value;
-                  });
-                },
+              controller: inputController1,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'New Number',
               ),
-            ],
-          ),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () {
-                // Simpan perubahan
-                Navigator.of(context).pop();
-                _saveEditing();
-              },
-              child: Text('Save'),
+              controller: inputController2,
             ),
           ],
-        );
-      },
-    );
-  }
+        ),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              // Simpan perubahan
+              Navigator.of(context).pop();
+              _saveEditing();
+            },
+            child: Text('Save'),
+          ),
+        ],
+      );
+    },
+  );
+}
+
 }
