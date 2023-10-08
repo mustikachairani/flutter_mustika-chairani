@@ -297,7 +297,7 @@ class _ContactPageState extends State<ContactPage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Delete Contact'),
-          content: Text('Are you sure you want to delete this contact?'),
+          content: Text('Apa kamu yakin ingin menghapus kontak ini?'),
           actions: <Widget>[
             TextButton(
               onPressed: () {
