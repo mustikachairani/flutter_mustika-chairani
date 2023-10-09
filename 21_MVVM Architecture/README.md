@@ -1,13 +1,24 @@
-<h1>Resume Intoduction Mobile App Development</h1>
+<h1>Resume Model-View-ViewModel</h1>
 
-- Proses pengembangan perangkat lunak melibatkan penggunaan bahasa pemrograman untuk menciptakan perintah yang dapat dimengerti oleh komputer. Ada berbagai jenis perangkat lunak, termasuk web, desktop, dan mobile, yang masing-masing memiliki karakteristik dan kebutuhan pengembangan yang berbeda. Ada juga metode kompilasi dan interpretasi untuk menerjemahkan kode sumber ke dalam bahasa mesin yang dapat dijalankan oleh komputer.
+MVVM, Model-View-ViewModel, memisahkan logika tampilan dari antarmuka pengguna dengan memperkenalkan view model. Arsitektur ini menawarkan kegunaan ulang, di mana beberapa tampilan dapat menggunakan view model yang sama untuk logika bersama. Ini meningkatkan kemudahan pemeliharaan dengan memisahkan tugas terkait tampilan dari logika. Keuntungan uji coba juga meningkat karena pengujian terisolasi untuk tampilan dan logika, meningkatkan produktivitas.
 
-- Pengembangan aplikasi mobile merupakan proses menciptakan aplikasi yang berfungsi pada perangkat mobile yang berada di dalam bidang pengembangan perangkat lunak. Proses ini melibatkan tahapan desain, pembuatan, pengujian, dan peluncuran aplikasi.
+Dalam implementasi MVVM:
 
-- Pengembangan aplikasi mobile saat ini penting karena semakin banyak orang menggunakan perangkat mobile seperti smartphone dan tablet, dan hal ini memungkinkan pengembang untuk menciptakan solusi yang relevan dan mudah diakses oleh pengguna.
+1. Struktur Direktori
+   - Model: Dibagi menjadi struktur data dan sumber data.
+   - Setiap layar memiliki direktori dengan komponen view dan view model.
 
-- Proses pengembangan aplikasi mobile melibatkan para pengembang perangkat lunak yang mengkhususkan diri dalam pengembangan aplikasi untuk perangkat mobile. Ada pula platform-platform khusus seperti iOS dan Android yang memerlukan bahasa pemrograman tertentu.
+2. Model
+   - Mewakili data dalam bentuk kelas dengan properti yang memuat data yang dimuat.
 
-- Aplikasi mobile dapat diakses dan digunakan di perangkat mobile, seperti smartphone dan tablet. Aplikasi dapat diunduh dan diinstal melalui toko aplikasi atau penyedia aplikasi resmi.
+3. View Model
+   - Menyimpan data dan logika yang diperlukan untuk suatu layar.
+   - Memfasilitasi logika bersama untuk widget di berbagai tampilan.
 
-- Pengembangan aplikasi mobile terjadi sepanjang waktu, seiring dengan perkembangan teknologi dan kebutuhan pengguna. Proses pengembangan ini dimulai dari tahap desain hingga peluncuran, dan kemudian terus diperbarui sesuai kebutuhan dan perbaikan.
+4. Pelaksanaan MVVM
+   - Mendaftarkan View Model
+Gunakan Multiprovider untuk mendaftarkan banyak view model. Material App berfungsi sebagai child utama.
+   - View (Stateful Widget)
+ Tampilkan data di view dengan meletakkannya pada bagian build menggunakan getter dari view model.
+
+Struktur ini mendorong organisasi kode, kegunaan ulang, dan pemeliharaan yang lebih mudah, menjadikan MVVM sebagai arsitektur yang kokoh untuk membangun aplikasi Flutter yang dapat diuji dan berkembang.
